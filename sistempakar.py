@@ -1,4 +1,5 @@
-from flask import Flask, session, redirect, url_for, render_template, request, escape
+from flask import Flask, session, redirect, url_for, render_template, request
+from markupsafe import escape
 app = Flask(__name__)
 app.secret_key = 'isinya password buat session'
 app.static_folder = 'static'
